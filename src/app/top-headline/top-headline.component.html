@@ -1,1 +1,13 @@
-<p>top-headline works!</p>
+<div class="container my-3">
+    <h2 style="border-left:5px solid orange ;padding: 10px;"> Top News</h2>
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-12 my-2" *ngFor="let nd of topHeadlineData">
+            <div class="box">
+                <img src="{{nd.urlToImage}}"  width="100%" class="img-responsive rounded" alt="">
+                <h5>{{nd.title}}</h5>
+                <!-- <p>{{nd.content}}</p> -->
+                <a class="btn btn-dark" target="_blank" href="{{nd.url}}">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>

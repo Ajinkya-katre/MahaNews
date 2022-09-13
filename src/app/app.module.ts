@@ -5,18 +5,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopHeadlineComponent } from './top-headline/top-headline.component';
 import { HttpClientModule} from '@angular/common/http';
+import { MahanewsapiService } from './service/mahanewsapi.service';
+import { BbcComponent } from './bbc/bbc.component';
+import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TopHeadlineComponent
+    TopHeadlineComponent,
+    BbcComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    LoadingBarHttpClientModule
+    
   ],
-  providers: [],
+  providers: [MahanewsapiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
