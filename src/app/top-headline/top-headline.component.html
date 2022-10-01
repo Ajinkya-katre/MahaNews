@@ -4,9 +4,11 @@
         <div class="col-lg-3 col-md-6 col-12 my-2" *ngFor="let nd of topHeadlineData">
             <div class="box">
                 <img src="{{nd.urlToImage}}"  width="100%" class="img-responsive rounded" alt="">
-                <h5>{{nd.title}}</h5>
-                <!-- <p>{{nd.content}}</p> -->
-                <a class="btn btn-dark" target="_blank" href="{{nd.url}}">Read More</a>
+                <h5 class="m-2">{{nd.title}}</h5>
+                <!-- <p class="m-2">{{nd.content}}</p>  -->
+                <a class="btn btn-dark m-2" target="_blank" href="{{nd.url}}">Read More</a> 
+              
+           
             </div>
         </div>
     </div>
