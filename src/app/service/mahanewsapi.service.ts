@@ -10,11 +10,17 @@ export class MahanewsapiService {
 
   constructor(private http:HttpClient) {}
   // TOP HEADLINE API URL  
-   topHeadlineNewsApi = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=8c8483f9aa26420aad652bd8fc93b02f';
+   topHeadlineNewsApi:string = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=8c8483f9aa26420aad652bd8fc93b02f';
 
-   bbcNewsApi = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8c8483f9aa26420aad652bd8fc93b02f'
-  
-   getTopHeadlineNewsApi():Observable<any>{
+   bbcNewsApi:string = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8c8483f9aa26420aad652bd8fc93b02f'
+
+   businessNewsApi:string = 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=8c8483f9aa26420aad652bd8fc93b02f'
+   
+    breakingNews:string = 'https://newsdata.io/api/1/news?apikey=pub_119411f3db3ab70e608e1d2c0b7b5a6ae63de&q=pune&language=en'
+
+    cryptoNews:string  = 'https://newsdata.io/api/1/news?apikey=pub_119411f3db3ab70e608e1d2c0b7b5a6ae63de&language=en'
+   
+    getTopHeadlineNewsApi():Observable<any>{
     return this.http.get(this.topHeadlineNewsApi); 
   }
 
@@ -22,5 +28,15 @@ export class MahanewsapiService {
     return this.http.get(this.bbcNewsApi)
   }
 
+  getBusinessNewsApi():Observable<any>{
+    return this.http.get(this.businessNewsApi)
+  }
+  getBreakingNews():Observable<any>{
+    return this.http.get(this.breakingNews)
+  }
+
+  getCryptoNews():Observable<any>{
+    return this.http.get(this.cryptoNews)
+  }
 
   }

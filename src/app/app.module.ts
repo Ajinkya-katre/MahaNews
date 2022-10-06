@@ -8,18 +8,32 @@ import { HttpClientModule} from '@angular/common/http';
 import { MahanewsapiService } from './service/mahanewsapi.service';
 import { BbcComponent } from './bbc/bbc.component';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { BusinessComponent } from './business/business.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+
+import { FormsModule } from '@angular/forms';
+import { BreakingnewsComponent } from './breakingnews/breakingnews.component';
+import { CryptonewsComponent } from './cryptonews/cryptonews.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopHeadlineComponent,
-    BbcComponent
+    BbcComponent,
+    BusinessComponent,
+    BreakingnewsComponent,
+    CryptonewsComponent
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    LoadingBarHttpClientModule
+    LoadingBarHttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    FormsModule
     
   ],
   providers: [MahanewsapiService],

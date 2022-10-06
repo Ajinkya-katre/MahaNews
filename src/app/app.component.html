@@ -1,17 +1,26 @@
 <ngx-loading-bar [includeSpinner]="false" [height]="'5px'" [color]="'blue'"></ngx-loading-bar>
   <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand text-warning " href="#">MAHANEWS</a>
+      <a class="navbar-brand text-warning " href="#" >MAHANEWS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">India</a>
+          <a class="nav-link " routerLink="">India</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="bbc">BBC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="business">Business</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="breaking">Breaking News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="crypto">Crypto News</a>
         </li>
         <!-- <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -32,13 +41,18 @@
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form> -->
+   
+      <p class="text-white m-2">{{today | date  }}</p>
+      <button mat-raised-button color="primary">Login</button>
     </div>
   </div>
 </nav>
 
 
-<router-outlet></router-outlet>
 
+<router-outlet></router-outlet>
 <footer class="text-center">
-  <p >&copy; & &reg; by MahaNews </p>
+  <p >&copy; & &reg; by MahaNews  - Made with <span class="text-danger">&hearts;</span>
+    in India</p>
 </footer>
+
