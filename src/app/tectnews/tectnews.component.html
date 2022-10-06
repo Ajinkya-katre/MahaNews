@@ -1,0 +1,14 @@
+<div class="container my-3">
+    <h2 style="border-left:5px solid orange ;padding: 10px;"> Tech News</h2>
+
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-12 my-2" *ngFor="let bd of techDisplay">
+            <div class="box">
+                <img src="{{bd.urlToImage}}"  width="100%" class="img-responsive rounded" alt="">
+                <h5>{{bd.title}}</h5>
+                <!-- <p>{{nd.content}}</p> -->
+                <a class="btn btn-dark" target="_blank" href="{{bd.url}}">Read More</a>
+            </div>
+        </div>
+    </div>
+</div>

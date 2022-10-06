@@ -20,6 +20,8 @@ export class MahanewsapiService {
 
     cryptoNews:string  = 'https://newsdata.io/api/1/news?apikey=pub_119411f3db3ab70e608e1d2c0b7b5a6ae63de&language=en'
    
+    techNews:string = "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=8c8483f9aa26420aad652bd8fc93b02f"
+
     getTopHeadlineNewsApi():Observable<any>{
     return this.http.get(this.topHeadlineNewsApi); 
   }
@@ -37,6 +39,10 @@ export class MahanewsapiService {
 
   getCryptoNews():Observable<any>{
     return this.http.get(this.cryptoNews)
+  }
+
+  getTechNews():Observable<any>{
+    return this.http.get(this.techNews)
   }
 
   }

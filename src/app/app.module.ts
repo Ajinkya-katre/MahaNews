@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule } from '@angular/forms';
 import { BreakingnewsComponent } from './breakingnews/breakingnews.component';
 import { CryptonewsComponent } from './cryptonews/cryptonews.component';
+import { TectnewsComponent } from './tectnews/tectnews.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CryptonewsComponent } from './cryptonews/cryptonews.component';
     BbcComponent,
     BusinessComponent,
     BreakingnewsComponent,
-    CryptonewsComponent
+    CryptonewsComponent,
+    TectnewsComponent
    
   ],
   imports: [
