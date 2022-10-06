@@ -22,6 +22,12 @@ export class MahanewsapiService {
    
     techNews:string = "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=8c8483f9aa26420aad652bd8fc93b02f"
 
+    sportNews:string = 'https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=8c8483f9aa26420aad652bd8fc93b02f'
+
+    getSportNews():Observable<any>{
+        return this.http.get(this.sportNews)
+    }
+
     getTopHeadlineNewsApi():Observable<any>{
     return this.http.get(this.topHeadlineNewsApi); 
   }

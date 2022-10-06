@@ -16,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 import { BreakingnewsComponent } from './breakingnews/breakingnews.component';
 import { CryptonewsComponent } from './cryptonews/cryptonews.component';
 import { TectnewsComponent } from './tectnews/tectnews.component';
+import { SportnewsComponent } from './sportnews/sportnews.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TectnewsComponent } from './tectnews/tectnews.component';
     BusinessComponent,
     BreakingnewsComponent,
     CryptonewsComponent,
-    TectnewsComponent
+    TectnewsComponent,
+    SportnewsComponent
    
   ],
   imports: [

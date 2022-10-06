@@ -6,15 +6,19 @@ import { BusinessComponent } from './business/business.component';
 import { BreakingnewsComponent } from './breakingnews/breakingnews.component';
 import { CryptonewsComponent } from './cryptonews/cryptonews.component';
 import { TectnewsComponent } from './tectnews/tectnews.component';
+import { SportnewsComponent } from './sportnews/sportnews.component';
 
 const routes: Routes = [
-  {path:'',component:TopHeadlineComponent},
+  {path:'',pathMatch:'full',redirectTo:'/home'},
+  {path:'home',component:TopHeadlineComponent},
   {path:'bbc',component:BbcComponent},
   {path:'business',component:BusinessComponent},
   {path:'breaking',component:BreakingnewsComponent},
   {path:'crypto',component:CryptonewsComponent},
-  {path:'tech',component:TectnewsComponent}
+  {path:'tech',component:TectnewsComponent},
+  {path:'sport',component:SportnewsComponent},
 
+  {path:'**',pathMatch:'full', redirectTo:'/home'}
 
 
 ];
