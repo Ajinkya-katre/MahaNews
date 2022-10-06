@@ -11,12 +11,9 @@ tr:hover{
     background-color: white;
     color: black;
 }
-.nav-link:hover{
-    /* font-size: 1rem; */
-    /* padding: 5px; */
+
+.active{
+    /* background-color: black; */
     color: gold !important;
-    /* border-bottom: 2px solid gold; */
-}
-.nav-item{
-    border-right: 2px dotted white;
+    border-bottom: 2px solid gold;
 }
