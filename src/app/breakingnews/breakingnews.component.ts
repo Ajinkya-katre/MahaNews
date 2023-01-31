@@ -9,10 +9,16 @@ import { MahanewsapiService } from '../service/mahanewsapi.service';
 export class BreakingnewsComponent implements OnInit {
 
   breakingNewsData:any;
+  contentLoaded = false;
 
   constructor(private api:MahanewsapiService) { }
 
   ngOnInit(): void {
+    
+    setTimeout(()=>{
+      this.contentLoaded = true;
+    },2000)
+
       this.api.getBreakingNews().subscribe((res)=>{
           this.breakingNewsData = res.results
       })

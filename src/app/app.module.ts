@@ -17,6 +17,11 @@ import { BreakingnewsComponent } from './breakingnews/breakingnews.component';
 import { CryptonewsComponent } from './cryptonews/cryptonews.component';
 import { TectnewsComponent } from './tectnews/tectnews.component';
 import { SportnewsComponent } from './sportnews/sportnews.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { LoginComponent } from './login/login.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SingupComponent } from './signup/signup.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +32,10 @@ import { SportnewsComponent } from './sportnews/sportnews.component';
     BreakingnewsComponent,
     CryptonewsComponent,
     TectnewsComponent,
-    SportnewsComponent
+    SportnewsComponent,
+    NavbarComponent,
+    LoginComponent,
+    SingupComponent
    
   ],
   imports: [
@@ -37,7 +45,10 @@ import { SportnewsComponent } from './sportnews/sportnews.component';
     LoadingBarHttpClientModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    FormsModule
+    FormsModule,
+    NgxSkeletonLoaderModule,
+    ReactiveFormsModule,
+    
     
   ],
   providers: [MahanewsapiService],

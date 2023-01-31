@@ -6,6 +6,7 @@ import { MahanewsapiService } from '../service/mahanewsapi.service';
   styleUrls: ['./top-headline.component.css']
 })
 export class TopHeadlineComponent implements OnInit {
+  contentLoaded = false;
 
   constructor(private _api:MahanewsapiService) { }
 
@@ -13,6 +14,10 @@ export class TopHeadlineComponent implements OnInit {
 
 
   ngOnInit(): void {
+    
+    setTimeout(()=>{
+      this.contentLoaded = true;
+    },2000)
     
     this._api.getTopHeadlineNewsApi().subscribe((res)=>{
       // console.log(res.articles);

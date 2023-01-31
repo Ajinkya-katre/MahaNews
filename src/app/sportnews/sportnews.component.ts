@@ -9,10 +9,15 @@ import { MahanewsapiService } from '../service/mahanewsapi.service';
 export class SportnewsComponent implements OnInit {
 
   sportDisplay:any = [];
+  contentLoaded  = false;
 
   constructor(private api:MahanewsapiService) { }
 
   ngOnInit(): void {
+
+    setTimeout(()=>{
+      this.contentLoaded = true;
+    },2000)
 
     this.api.getSportNews().subscribe((res)=>{
       this.sportDisplay = res.articles

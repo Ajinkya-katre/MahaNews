@@ -9,10 +9,14 @@ import { MahanewsapiService } from '../service/mahanewsapi.service';
 export class BusinessComponent implements OnInit {
 
   businessDisplay:any=[];
+  contentLoaded = false;
 
   constructor(private _api:MahanewsapiService) { }
 
   ngOnInit(): void {
+    setTimeout(()=>{
+      this.contentLoaded = true;
+    },2000)
 
     this._api.getBusinessNewsApi().subscribe((res)=>{
       this.businessDisplay=res.articles

@@ -9,10 +9,16 @@ import { MahanewsapiService } from '../service/mahanewsapi.service';
 export class TectnewsComponent implements OnInit {
 
   techDisplay:any=[];
+  contentLoaded = false;
 
   constructor(private api:MahanewsapiService) { }
 
   ngOnInit(): void {
+    
+    setTimeout(()=>{
+      this.contentLoaded = true;
+    },2000)
+    
       this.api.getTechNews().subscribe((res)=>{
         this.techDisplay = res.articles;
       })

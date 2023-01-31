@@ -3,8 +3,9 @@
     <h2 style="border-left:5px solid orange ;padding: 10px;"> Business News</h2>
 
     <div class="row">
-        <div class="col-lg-3 col-md-6 col-12 my-2" *ngFor="let bd of sportDisplay">
-            <div class="box">
+        <div class="col-lg-3 col-md-6 col-sm-12 my-2" *ngFor="let bd of sportDisplay">
+            <ngx-skeleton-loader *ngIf="!contentLoaded" [theme]="{ 'border-radius': '5px',height: '200px',border: '1px solid white'}"></ngx-skeleton-loader>
+            <div class="box" *ngIf="contentLoaded">
                 <img src="{{bd.urlToImage}}"  width="100%" class="img-responsive rounded" alt="">
                 <h5>{{bd.title}}</h5>
                 <!-- <p>{{nd.content}}</p> -->

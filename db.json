@@ -1,0 +1,60 @@
+{
+  "signup": [
+    {
+      "fname": "ajinkya",
+      "lname": "katre",
+      "email": "ak@gmail.com",
+      "phone": "7620849210",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "fname": "sagar",
+      "lname": "ahire",
+      "email": "sagar@gmail.com",
+      "phone": "8308607474",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "fname": "ganesh",
+      "lname": "kale",
+      "email": "gk@gmail.com",
+      "phone": "9922773256",
+      "password": "123",
+      "id": 3
+    },
+    {
+      "fname": "sumeet",
+      "lname": "tambe",
+      "email": "sumit@gmail.com",
+      "phone": "9879876754",
+      "password": "sumeet",
+      "id": 4
+    },
+    {
+      "fname": "bhushan",
+      "lname": "matee",
+      "email": "bhushan@gmail.com",
+      "phone": "8365647836",
+      "password": "123",
+      "id": 5
+    },
+    {
+      "fname": "suchitra",
+      "lname": "katre",
+      "email": "suchi@gmail.com",
+      "phone": "8308607474",
+      "password": "123",
+      "id": 6
+    },
+    {
+      "fname": "amit",
+      "lname": "patil",
+      "email": "amit@gmail.com",
+      "phone": "8365647836",
+      "password": "123",
+      "id": 7
+    }
+  ]
+}

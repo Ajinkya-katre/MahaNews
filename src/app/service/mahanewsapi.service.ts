@@ -8,11 +8,10 @@ import { Observable } from 'rxjs';
 })
 export class MahanewsapiService {
 
-  constructor(private http:HttpClient) {}
   // TOP HEADLINE API URL  
-   topHeadlineNewsApi:string = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=8c8483f9aa26420aad652bd8fc93b02f';
+  topHeadlineNewsApi:string = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=8c8483f9aa26420aad652bd8fc93b02f';
 
-   bbcNewsApi:string = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8c8483f9aa26420aad652bd8fc93b02f'
+  bbcNewsApi:string = 'https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=8c8483f9aa26420aad652bd8fc93b02f'
 
    businessNewsApi:string = 'https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=8c8483f9aa26420aad652bd8fc93b02f'
    
@@ -21,9 +20,11 @@ export class MahanewsapiService {
     cryptoNews:string  = 'https://newsdata.io/api/1/news?apikey=pub_119411f3db3ab70e608e1d2c0b7b5a6ae63de&language=en'
    
     techNews:string = "https://newsapi.org/v2/top-headlines?country=in&category=technology&apiKey=8c8483f9aa26420aad652bd8fc93b02f"
-
+    
     sportNews:string = 'https://newsapi.org/v2/top-headlines?country=in&category=sports&apiKey=8c8483f9aa26420aad652bd8fc93b02f'
-
+    
+    constructor(private http:HttpClient) {}
+    
     getSportNews():Observable<any>{
         return this.http.get(this.sportNews)
     }
